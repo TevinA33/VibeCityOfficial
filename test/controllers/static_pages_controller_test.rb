@@ -7,55 +7,55 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
  
   test "should get VibeCity Home" do
-    get static_pages_home_url
+   get root_path
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end
   
    test "should get VibeCity Help" do
-    get static_pages_help_url
+   get help_path
     assert_response :success
     assert_select "title", "Help | #{@base_title}"
   end
   
   test "should get VibeCity About" do
-    get static_pages_about_url
+   get about_path
     assert_response :success
-     assert_select "title", "About | #{@base_title}"
+    assert_select "title", "About | #{@base_title}"
   end
   
   test "should get VibeCity Membership" do
-    get static_pages_membership_url
+    get membership_path
     assert_response :success
     assert_select "title", "Membership | #{@base_title}"
   end
   
   test "should get VibeCity Miscellaneous Items" do
-    get static_pages_miscellaneous_url
+    get miscellaneous_path
     assert_response :success
     assert_select "title", "Miscellaneous Items | #{@base_title}"
   end
   
   test "should get VibeCity Mixers" do
-    get static_pages_mixers_url
+   get mixers_path
     assert_response :success
     assert_select "title", "Mixers | #{@base_title}"
   end
   
   test "should get VibeCity Music" do
-    get static_pages_music_url
+    get music_path
     assert_response :success
     assert_select "title", "Music | #{@base_title}"
   end
   
   test "should get VibeCity Reviews" do
-    get static_pages_reviews_url
+    get reviews_path
     assert_response :success
     assert_select "title", "Reviews | #{@base_title}"
   end
   
   test "should get VibeCity Speakers" do
-    get static_pages_speakers_url
+    get speakers_path
     assert_response :success
     assert_select "title", "Speakers | #{@base_title}"
   end

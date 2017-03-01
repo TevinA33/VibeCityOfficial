@@ -1,0 +1,22 @@
+<footer class="footer">
+  
+  <nav>
+      <ul>
+ <li><a><%= link_to "Home",    root_path %></a></li>
+  <li><a><%= link_to "About Us",    about_path %></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Equipment</a>
+            <div class="dropdown-content">
+                  <a><%= link_to "Music",  music_path %></a>
+                  <a><%= link_to "Mixers", mixers_path %></a>
+                  <a><%= link_to "speakers",speakers_path %></a>
+                  <a><%= link_to "Miscellaneous", miscellaneous_path %></a>
+            </div>
+     </li>
+     <li><a><%= link_to "Membership",membership_path %></a></li>
+     <li><a><%= link_to "Reviews",reviews_path %></a></li>
+      <li><a>Sign In</a></li>
+    </ul>
+    
+  </nav>
+</footer>
