@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/miscellaneous',    to: 'static_pages#miscellaneous'
   get  '/membership',   to: 'static_pages#membership'
   get  '/signup',  to: 'users#new'
+   resources :users
   
   #root 'static_pages#help'
   #root 'static_pages#about'
