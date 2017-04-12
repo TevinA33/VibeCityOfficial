@@ -178,7 +178,7 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid white;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -221,9 +221,11 @@ input {
 .microposts {
   list-style: none;
   padding: 0;
+  color: white;
   li {
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid white;
+    color:white;
   }
   .user {
     margin-top: 5em;
@@ -231,14 +233,14 @@ input {
   }
   .content {
     display: block;
-    margin-left: 60px;
+    margin-left: 100px;
     img {
       display: block;
       padding: 5px 0;
     }
   }
   .timestamp {
-    color: white;
+
     display: block;
     margin-left: 60px;
   }
